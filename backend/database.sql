@@ -474,7 +474,7 @@ VALUES (
         1,
         'DASFKE32',
         'B3337T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600035/VoituresEliteFleet/e-aixam-coupe-gti-kl_l7rbaj.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600033/VoituresEliteFleet/slide_multia_detz_inte_gtigtotdbcarbonlook9pouces_4_f00hb4.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600039/VoituresEliteFleet/130995356_o_nyrafs.jpg\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673607713/VoituresEliteFleet/AIXAM-Coup-GTI-Vision-rif-10153494-20191025230506.7082030015_vweorp.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673607470/VoituresEliteFleet/aixam_hua5le.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673607794/VoituresEliteFleet/slide_evocompteur_kwrojo.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673607877/VoituresEliteFleet/4_j40vkg.png\"}'
     );
 
 INSERT INTO
@@ -516,7 +516,7 @@ VALUES (
         1,
         'DASFKE32',
         'B3337T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600094/VoituresEliteFleet/ch46-gamme-site-grise01_vka8cv.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600109/VoituresEliteFleet/neuve-chatenet-ch40-9-1200x600_pmvfqj.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600113/VoituresEliteFleet/COFFRE_s6ixit.jpg\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600094/VoituresEliteFleet/ch46-gamme-site-grise01_vka8cv.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600113/VoituresEliteFleet/COFFRE_s6ixit.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600109/VoituresEliteFleet/neuve-chatenet-ch40-9-1200x600_pmvfqj.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673608613/VoituresEliteFleet/chatenet-ch40-junior-gris_6de0e1e8-4049-4206-82d0-61de75731f8a_efeoww.jpg\"}'
     );
 
 INSERT INTO
@@ -558,7 +558,7 @@ VALUES (
         1,
         'DASFKE32',
         'B3337T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600173/VoituresEliteFleet/2282_wjfsnv.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600175/VoituresEliteFleet/2281_ejpkip.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600178/VoituresEliteFleet/2280_nrc5b1.jpg\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600173/VoituresEliteFleet/2282_wjfsnv.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600175/VoituresEliteFleet/2281_ejpkip.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600178/VoituresEliteFleet/2280_nrc5b1.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673608805/VoituresEliteFleet/2_tabqzt.jpg\"}'
     );
 
 INSERT INTO
@@ -600,7 +600,7 @@ VALUES (
         1,
         'MACSF',
         'B627T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600253/VoituresEliteFleet/30fe93420930d639974601c5ec827fdb090dbc5b_bf2xm1.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600248/VoituresEliteFleet/JS50-Young-Gris-Graphite-1_bgwf2x.jpg\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673609187/VoituresEliteFleet/JS50_Sport_Ultimate_my18_f0smun.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600248/VoituresEliteFleet/JS50-Young-Gris-Graphite-1_bgwf2x.jpg\",\"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673609346/VoituresEliteFleet/Extra_Ligier-JS60-Sport-Ultimate_840px_Configurator-Dashboard_CarPlay-1_bw3wak.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673609490/VoituresEliteFleet/007-87_zl2rlr.jpg\"}'
     );
 
 INSERT INTO
@@ -642,7 +642,11 @@ VALUES (
         1,
         'MACSF',
         'B627T3',
-        '{\"image1\": \"https://www.ligier.fr/wp-content/uploads/2020/11/Ligier-JS50-Sport-Young-rouge-566x400.png\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600347/VoituresEliteFleet/JS50_Sport_Young_3-4_AR_wxfnp4.jpg\"}'
+        '{
+  "image1": "https://www.ligier.fr/wp-content/uploads/2020/11/Ligier-JS50-Sport-Young-rouge-566x400.png",
+  "image2": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673600347/VoituresEliteFleet/JS50_Sport_Young_3-4_AR_wxfnp4.jpg",
+  "image3": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673610139/VoituresEliteFleet/JS50-Young-INTER-JS50-YOUNG-Kit-multimedia-Carplay-Android-Auto-Pack-HiFi-2.0-1_uba2wz.jpg",
+  "image4": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673610355/VoituresEliteFleet/sport_utlimate_galeria_02_qr4yzg.png"}'
     );
 
 INSERT INTO
@@ -684,7 +688,11 @@ VALUES (
         1,
         'MAIF',
         'B62234T3',
-        '{\"image1\": \"https://www.aixam.com/ressources/medias/slide_minauto-access-front-8k.jpg?v2\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600436/VoituresEliteFleet/te%CC%81le%CC%81chargement_dh03dc.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600439/VoituresEliteFleet/te%CC%81le%CC%81chargement_1_u5fw0u.jpg\"}'
+        '{
+  "image1": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673610929/VoituresEliteFleet/9926315286_1_nmupya.jpg",
+  "image2": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673610695/VoituresEliteFleet/mu13m2_VLGUV53BFC3227577_01_hd_ejgg4f.jpg",
+  "image3": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673611250/VoituresEliteFleet/slide_interieur-minauto_s3z3y6.jpg",
+  "image4": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673611689/VoituresEliteFleet/IMG201803261714251jpg_5bc06a590cb5c_gy64oh.jpg"}'
     );
 
 INSERT INTO
@@ -726,7 +734,7 @@ VALUES (
         1,
         'Matmut',
         'FKJHR789',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673599942/VoituresEliteFleet/38-5cdaff0a91137_gqitu6.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673599945/VoituresEliteFleet/comment-assurer-une-voiture-sans-permis_cyw9a5.webp\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673599953/VoituresEliteFleet/Mon_projet_cyo1ax.jpg\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673607291/VoituresEliteFleet/ch40-sportline_0_b32dok.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673607091/VoituresEliteFleet/img-20200220-145251_pgbmwu.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673599945/VoituresEliteFleet/comment-assurer-une-voiture-sans-permis_cyw9a5.webp\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673599953/VoituresEliteFleet/Mon_projet_cyo1ax.jpg\"}'
     );
 
 INSERT INTO
@@ -768,7 +776,11 @@ VALUES (
         1,
         'MACSF',
         'B623E227T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600636/VoituresEliteFleet/un-renault-twizy-vendre_t2nxfa.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600723/VoituresEliteFleet/maxresdefault_2_tedsko.jpg\"}'
+        '{
+  "image1": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673611966/VoituresEliteFleet/renault-twizy-by-oakley-design_1_eiadkf.jpg",
+  "image2": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673611867/VoituresEliteFleet/renault-twizy-by-oakley-design-2012-10_k3rou5.jpg",
+  "image3": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673612096/VoituresEliteFleet/renault-twizy-rs-f1-oakley-design-2_ggxjbj.jpg",
+  "image4": "https://res.cloudinary.com/dhudn6li6/image/upload/v1673612179/VoituresEliteFleet/twizy-f1_1_vu7gfs.jpg"}'
     );
 
 INSERT INTO
@@ -810,7 +822,7 @@ VALUES (
         1,
         'MACSF',
         'B623E227T3',
-        '{\"image1\": \"https://images.caradisiac.com/logos-ref/modele/modele--renault-twizy-45/S7-modele--renault-twizy-45.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600821/VoituresEliteFleet/m1gy062bcxx6_800_jdkkd4.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600903/VoituresEliteFleet/renault-twizy-21-1617404404_auzfj9.webp\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673612281/VoituresEliteFleet/RENAULT-TWIZY-00_xq3cxv.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673612280/VoituresEliteFleet/25000000430vo02144107_medium_zl8x6i.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673612434/VoituresEliteFleet/NodNZy_6_PP6PEpLXDh4DPo1_ZAFIszv1rHVwNfZoB16s4JxWKgywkkapw_klqadd.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673612613/Hackaton%202/S7-comparatif-citroen-ami-vs-renault-twizy-45-une-guerre-sans-merci-et-sans-permis-655578_urovid.jpg\"}'
     );
 
 INSERT INTO
@@ -852,7 +864,7 @@ VALUES (
         1,
         'MACSF',
         'B623E227T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600977/VoituresEliteFleet/aed36b5f4d_uno6dk.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673600976/VoituresEliteFleet/twizy-bleu-caraibes_zc9zln.webp\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613127/Hackaton%202/renault-twizy-renault-twizy-bleu_8689418413_gbmo3n.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673612930/Hackaton%202/S1-renault-twizy-le-coleoptere-branche-salon-caradisiac-electrique-hybride-2021-677376_cnokn7.jpg\",\"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613127/Hackaton%202/renault-twizy-renault-twizy-bleu_8689418413_gbmo3n.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673612930/Hackaton%202/S1-renault-twizy-le-coleoptere-branche-salon-caradisiac-electrique-hybride-2021-677376_cnokn7.jpg\"}'
     );
 
 INSERT INTO
@@ -894,7 +906,7 @@ VALUES (
         1,
         'MACSF',
         'B623E227T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601142/VoituresEliteFleet/f11_r81fns.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601108/VoituresEliteFleet/renault-twizy-1137x500-1_faxsuj.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601082/VoituresEliteFleet/depositphotos_545814914-stock-photo-tula-russia-january-30-2022_okcq6d.webp\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613233/Hackaton%202/renault-twizy-13kw-apan_e6twb2.png\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613268/Hackaton%202/Renault-Twizy-2012_iyxhdo.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673612613/Hackaton%202/S7-comparatif-citroen-ami-vs-renault-twizy-45-une-guerre-sans-merci-et-sans-permis-655578_urovid.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601082/VoituresEliteFleet/depositphotos_545814914-stock-photo-tula-russia-january-30-2022_okcq6d.webp\"}'
     );
 
 INSERT INTO
@@ -936,7 +948,7 @@ VALUES (
         1,
         'MAIF',
         'B627T9873',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601222/VoituresEliteFleet/citroen-ami-2020_wuw0na.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601251/VoituresEliteFleet/P008_ami_cargo_siwzlc.jpg\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613399/VoituresEliteFleet/essai-citroen-ami-00004_nwtauh.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613477/VoituresEliteFleet/S1-essai-video-citroen-ami-que-vaut-l-electrique-a-6-000-eur-640507_gwtnyo.jpg\", \"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613523/VoituresEliteFleet/cl-21_zhiesm.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613550/VoituresEliteFleet/S1-essai-video-citroen-ami-que-vaut-l-electrique-a-6-000-eur-640498_jtqv8h.jpg\"}'
     );
 
 INSERT INTO
@@ -978,7 +990,7 @@ VALUES (
         1,
         'MAIF',
         'B627T98ZE73',
-        '{\"image1\": \"https://i.servimg.com/u/f86/18/30/80/88/citroe10.png\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613786/VoituresEliteFleet/ami_one_10_ys2fag.jpg\",\"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613844/VoituresEliteFleet/4162b1772eae07d624f6390f2b262365_petgdr.webp\",\"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613667/VoituresEliteFleet/ami_one_30_fywggq.jpg\",\"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673613550/VoituresEliteFleet/S1-essai-video-citroen-ami-que-vaut-l-electrique-a-6-000-eur-640498_jtqv8h.jpg\"}'
     );
 
 INSERT INTO
@@ -1020,7 +1032,7 @@ VALUES (
         1,
         'MACSF',
         'B627TZE3',
-        '{\"image1\": \"https://www.ligier.fr/wp-content/uploads/2022/11/M.GO-Must-min.png\"}'
+        '{\"image1\": \"https://www.ligier.fr/wp-content/uploads/2022/11/M.GO-Must-min.png\",\"image2\": \"https://www.ligier.fr/wp-content/uploads/2022/11/M.GO-Must-min.png\",\"image3\": \"https://www.ligier.fr/wp-content/uploads/2022/11/M.GO-Must-min.png\",\"image4\": \"https://www.ligier.fr/wp-content/uploads/2022/11/M.GO-Must-min.png\"}'
     );
 
 INSERT INTO
@@ -1062,7 +1074,7 @@ VALUES (
         1,
         'Libéa',
         'B6ZR27T3',
-        '{\"image1\": \"https://media.gqmagazine.fr/photos/5fa94b2fa6095c6ef665d607/master/w_1600,c_limit/1ville%20jaune%20chateau.jpeg\"}'
+        '{\"image1\": \"https://media.gqmagazine.fr/photos/5fa94b2fa6095c6ef665d607/master/w_1600,c_limit/1ville%20jaune%20chateau.jpeg\",\"image2\": \"https://media.gqmagazine.fr/photos/5fa94b2fa6095c6ef665d607/master/w_1600,c_limit/1ville%20jaune%20chateau.jpeg\",\"image3\": \"https://media.gqmagazine.fr/photos/5fa94b2fa6095c6ef665d607/master/w_1600,c_limit/1ville%20jaune%20chateau.jpeg\",\"image4\": \"https://media.gqmagazine.fr/photos/5fa94b2fa6095c6ef665d607/master/w_1600,c_limit/1ville%20jaune%20chateau.jpeg\"}'
     );
 
 INSERT INTO
@@ -1104,7 +1116,7 @@ VALUES (
         1,
         'MACSF',
         'B62E7T3',
-        '{\"image1\": \"https://www.gsanspermis.com/wp-content/uploads/2020/01/TABLETTE-GSP40.pdf-Adobe-Acrobat-Pro-1.jpg.webp\"}'
+        '{\"image1\": \"https://www.gsanspermis.com/wp-content/uploads/2020/01/TABLETTE-GSP40.pdf-Adobe-Acrobat-Pro-1.jpg.webp\",\"image2\": \"https://www.gsanspermis.com/wp-content/uploads/2020/01/TABLETTE-GSP40.pdf-Adobe-Acrobat-Pro-1.jpg.webp\",\"image3\": \"https://www.gsanspermis.com/wp-content/uploads/2020/01/TABLETTE-GSP40.pdf-Adobe-Acrobat-Pro-1.jpg.webp\",\"image4\": \"https://www.gsanspermis.com/wp-content/uploads/2020/01/TABLETTE-GSP40.pdf-Adobe-Acrobat-Pro-1.jpg.webp\"}'
     );
 
 INSERT INTO
@@ -1146,7 +1158,7 @@ VALUES (
         1,
         'MACSF',
         'B62723T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601852/VoituresEliteFleet/casalini-1-1200x800_bubdcj.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601853/VoituresEliteFleet/casalini-2-600x400_r0i6of.jpg\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601852/VoituresEliteFleet/casalini-1-1200x800_bubdcj.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601853/VoituresEliteFleet/casalini-2-600x400_r0i6of.jpg\",\"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601852/VoituresEliteFleet/casalini-1-1200x800_bubdcj.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601853/VoituresEliteFleet/casalini-2-600x400_r0i6of.jpg\"}'
     );
 
 INSERT INTO
@@ -1188,7 +1200,7 @@ VALUES (
         1,
         'MACSF',
         'B62723T3',
-        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601727/VoituresEliteFleet/2021032818193269509_pj9i5c.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601712/VoituresEliteFleet/2021032818192851564_otk3wi.jpg\"}'
+        '{\"image1\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601727/VoituresEliteFleet/2021032818193269509_pj9i5c.jpg\", \"image2\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601712/VoituresEliteFleet/2021032818192851564_otk3wi.jpg\",\"image3\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601727/VoituresEliteFleet/2021032818193269509_pj9i5c.jpg\", \"image4\": \"https://res.cloudinary.com/dhudn6li6/image/upload/v1673601712/VoituresEliteFleet/2021032818192851564_otk3wi.jpg\"}'
     );
 
 INSERT INTO
@@ -1230,7 +1242,7 @@ VALUES (
         1,
         'MAIF',
         'B627T23E3',
-        '{\"image1\": \"https://laboutiquegreenlines.com/wp-content/uploads/2021/11/1-1.jpg\"}'
+        '{\"image1\": \"https://laboutiquegreenlines.com/wp-content/uploads/2021/11/1-1.jpg\",\"image2\": \"https://laboutiquegreenlines.com/wp-content/uploads/2021/11/1-1.jpg\",\"image3\": \"https://laboutiquegreenlines.com/wp-content/uploads/2021/11/1-1.jpg\",\"image4\": \"https://laboutiquegreenlines.com/wp-content/uploads/2021/11/1-1.jpg\"}'
     );
 
 /* Reservation*/
