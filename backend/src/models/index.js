@@ -1,25 +1,6 @@
 const fs = require("fs");
-const mysql = require("mysql2/promise");
 const path = require("path");
-
-const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } = process.env;
-
-const pool = mysql.createPool({
-  host: DB_HOST,
-  port: DB_PORT,
-  user: DB_USER,
-  password: DB_PASSWORD,
-  database: DB_NAME,
-});
-
-pool.getConnection().catch(() => {
-  console.warn(
-    "Warning:",
-    "Failed to get a DB connection.",
-    "Did you create a .env file with valid credentials?",
-    "Routes using modeles won't work as intended"
-  );
-});
+const database = require("../../database");
 
 const modeles = fs
   .readdirSync(__dirname)
@@ -29,7 +10,7 @@ const modeles = fs
     const Manager = require(path.join(__dirname, file));
 
     const managerInstance = new Manager();
-    managerInstance.setConnection(pool);
+    managerInstance.setConnection(database);
 
     return { ...acc, [managerInstance.table]: managerInstance };
   }, {});

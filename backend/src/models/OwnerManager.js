@@ -6,9 +6,16 @@ class OwnerManager extends AbstractManager {
   }
 
   findOwners() {
-    return this.connection.query(
-      `select entreprise, email, ville, estValide, logo from  ${this.table}`
-    );
+    return new Promise((resolve, reject) => {
+      const sql = `select entreprise, email, ville, estValide, logo from  ${this.table}`;
+      this.connection?.all(sql, (err, rows) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(rows);
+        }
+      });
+    });
   }
 }
 

@@ -6,10 +6,21 @@ class ReservationManager extends AbstractManager {
   }
 
   findReservation() {
-    return this.connection.query(
-      `SELECT id_vehicule, CONCAT(user.prenom, ' ', user.nom) AS user_renter, locationDebut, locationFin FROM ${this.table}
-      INNER JOIN user ON  user.id = reservation.id_utlisateur`
-    );
+    return new Promise((resolve, reject) => {
+      const sql = `SELECT id_vehicule, user.prenom + ' ' + user.nom AS user_renter, locationDebut, locationFin FROM ${this.table}
+      INNER JOIN user ON  user.id = reservation.id_utlisateur`;
+      this.connection.all(sql, (err, rows) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(rows);
+        }
+      });
+    });
+    // return this.connection.query(
+    //   `SELECT id_vehicule, CONCAT(user.prenom, ' ', user.nom) AS user_renter, locationDebut, locationFin FROM ${this.table}
+    //   INNER JOIN user ON  user.id = reservation.id_utlisateur`
+    // );
   }
 
   addReservation(reservation) {

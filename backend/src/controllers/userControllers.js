@@ -16,7 +16,7 @@ const addUser = (req, res) => {
 const getAllUsers = (req, res) => {
   modeles.user
     .findAll()
-    .then(([rows]) => {
+    .then((rows) => {
       rows.forEach((element) => {
         const user = element;
         delete user.hashedPassword;

@@ -69,7 +69,7 @@ export default function Rent() {
       annee: car.annee.toString(),
       couleur: car.couleur,
       ville: car.ville,
-      image: car.image.image1,
+      image: JSON.parse(car.image).image1,
       prix: car.prix,
     }));
     setDataCar(cars);

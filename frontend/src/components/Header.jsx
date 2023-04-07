@@ -8,13 +8,11 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from "@assets/logo.png";
 
 function Header() {
-
   const { user: currentUser } = useSelector((state) => state.auth);
   const [isOwner, setIsOwner] = useState(false);
   const [estAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
-    
     if (currentUser) {
       setIsOwner(!currentUser.user.prenom);
       setIsAdmin(currentUser.user.estAdmin === 1);
@@ -60,9 +58,9 @@ function Header() {
           {currentUser && !estAdmin && !isOwner && (
             <Link
               to="/profil"
-              className="whitespace-nowrap text-sm font-medium text-gray-500 hover:text-gray-900"
+              className="whitespace-nowrap text-sm font-medium uppercase text-gray-500 hover:text-gray-900"
             >
-              {currentUser.user.prenom.toUpperCase()}
+              {currentUser.user.prenom}
             </Link>
           )}
           {currentUser && estAdmin && (
@@ -160,9 +158,9 @@ function Header() {
                 {currentUser && !estAdmin && !isOwner && (
                   <Link
                     to="/profil"
-                    className="whitespace-nowrap text-sm font-medium text-gray-500 hover:text-gray-900"
+                    className="whitespace-nowrap text-sm font-medium uppercase text-gray-500 hover:text-gray-900"
                   >
-                    <Popover.Button>{currentUser.user.prenom.toUpperCase()}</Popover.Button>
+                    <Popover.Button>{currentUser.user.prenom}</Popover.Button>
                   </Link>
                 )}
                 {currentUser && estAdmin && (

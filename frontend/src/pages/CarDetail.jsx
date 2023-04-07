@@ -79,7 +79,7 @@ export default function CardDetail() {
         annee: key.annee,
         couleur: key.couleur,
         ville: key.ville,
-        image: key.image,
+        image: JSON.parse(key.image),
         kilometrage: key.kilometrage,
         prix: key.prix,
       };
@@ -140,14 +140,14 @@ export default function CardDetail() {
             <div className="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
               <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
                 <img
-                  src={dataCar[0].image.image1}
+                  src={dataCar[0].image.image2}
                   alt={dataCar[0].modele}
                   className="h-full w-full object-cover object-center"
                 />
               </div>
               <div className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg">
                 <img
-                  src={dataCar[0].image.image1}
+                  src={dataCar[0].image.image3}
                   alt={dataCar[0].modele}
                   className="h-full w-full object-cover object-center"
                 />
@@ -155,7 +155,7 @@ export default function CardDetail() {
             </div>
             <div className="aspect-w-4 aspect-h-5 sm:overflow-hidden sm:rounded-lg lg:aspect-w-3 lg:aspect-h-4">
               <img
-                src={dataCar[0].image.image1}
+                src={dataCar[0].image.image4}
                 alt={dataCar[0].modele}
                 className="h-full w-full object-cover object-center"
               />

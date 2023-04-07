@@ -1,5 +1,9 @@
 /* eslint-disable react/prop-types */
+import { useSelector } from "react-redux";
+
 export default function OrderSummaries({ dataCar, total }) {
+  const { user: currentUser } = useSelector((state) => state.auth);
+
   const car = [
     {
       id: dataCar.id,
@@ -19,7 +23,7 @@ export default function OrderSummaries({ dataCar, total }) {
       <div className="max-w-3xl mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="max-w-xl">
           <h1 className="text-sm font-semibold uppercase tracking-wide text-indigo-600">
-            Merci
+            Merci {currentUser?.user.prenom}
           </h1>
           <p className="mt-2 text-4xl font-extrabold tracking-tight sm:text-5xl">
             Vous avez commandé une {car[0].marque} {car[0].modele}
@@ -67,9 +71,8 @@ export default function OrderSummaries({ dataCar, total }) {
                 <dt className="font-medium text-gray-900">Adresse</dt>
                 <dd className="mt-2 text-gray-700">
                   <address className="not-italic">
-                    <span className="block"> 2 avenue de la foire</span>
-                    <span className="block">17009</span>
-                    <span className="block">Toronto</span>
+                    <span className="block">{currentUser?.user.ville}</span>
+                    <span className="block">31000</span>
                   </address>
                 </dd>
               </div>
@@ -99,7 +102,9 @@ export default function OrderSummaries({ dataCar, total }) {
                     bigcarsmall10k
                   </span>
                 </dt>
-                <dd className="text-gray-700">-€{reduction} (10%)</dd>
+                <dd className="text-gray-700">
+                  -€{Math.round(reduction)} (10%)
+                </dd>
               </div>
               <div className="flex justify-between">
                 <dt className="font-medium text-gray-900">Total</dt>

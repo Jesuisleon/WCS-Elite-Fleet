@@ -24,6 +24,7 @@
     "multer": "^1.4.5-lts.1",
     "mysql2": "^2.3.3",
     "nodemailer": "^6.8.0",
+    "sqlite3": "^5.1.6",
     "template-fullstack": "file:..",
     "uuid": "^9.0.0"
   },

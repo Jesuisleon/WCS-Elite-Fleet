@@ -3,8 +3,8 @@ const modeles = require("../models");
 const getAllVehicles = (req, res) => {
   modeles.vehicule
     .findVehicle()
-    .then(([result]) => {
-      const reservation = req.body.resa;
+    .then((result) => {
+      const reservation = [req.body.resa];
       const vehicles = result.map((element) => {
         const element2 = reservation.filter(
           (i) => i.id_vehicule === element.id
@@ -23,9 +23,9 @@ const getOneVehicle = (req, res) => {
   const { id } = req.params;
   modeles.vehicule
     .findById(id)
-    .then(([result]) => {
+    .then((result) => {
       if (result.length) {
-        const reservation = req.body.resa;
+        const reservation = [req.body.resa];
         const vehicles = result.map((element) => {
           const element2 = reservation.filter(
             (i) => i.id_vehicule === element.id

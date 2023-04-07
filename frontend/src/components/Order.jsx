@@ -3,12 +3,13 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable prefer-template */
 /* eslint-disable react/prop-types */
+// eslint-disable-next-line import/no-unresolved
 import { useState } from "react";
 import { RadioGroup } from "@headlessui/react";
 import { CheckCircleIcon, XIcon } from "@heroicons/react/solid";
-// eslint-disable-next-line import/no-unresolved
 import OrderSummaries from "@components/OrderSummaries";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const assuranceMethods = [
   {
@@ -31,6 +32,7 @@ function classNames(...classes) {
 
 export default function Order({ carPrice, dataCar, duration, close }) {
   const navigate = useNavigate();
+  const { user: currentUser } = useSelector((state) => state.auth);
   const [summariesModal, setSummariesModal] = useState(false);
 
   const car = [
@@ -103,6 +105,7 @@ export default function Order({ carPrice, dataCar, duration, close }) {
                         id="email-address"
                         name="email-address"
                         autoComplete="email"
+                        defaultValue={currentUser?.user.email}
                         className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                       />
                     </div>
@@ -122,6 +125,7 @@ export default function Order({ carPrice, dataCar, duration, close }) {
                       </label>
                       <div className="mt-1">
                         <input
+                          defaultValue={currentUser?.user.prenom}
                           type="text"
                           id="first-name"
                           name="first-name"
@@ -139,6 +143,7 @@ export default function Order({ carPrice, dataCar, duration, close }) {
                       </label>
                       <div className="mt-1">
                         <input
+                          defaultValue={currentUser?.user.nom}
                           type="text"
                           id="last-name"
                           name="last-name"
@@ -175,6 +180,7 @@ export default function Order({ carPrice, dataCar, duration, close }) {
                       </label>
                       <div className="mt-1">
                         <input
+                          defaultValue={currentUser?.user.ville}
                           type="text"
                           name="ville"
                           id="ville"

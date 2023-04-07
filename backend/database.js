@@ -1,22 +1,9 @@
-require("dotenv").config();
-const mysql = require("mysql2/promise");
+const sqlite3 = require("sqlite3").verbose();
 
-const database = mysql.createPool({
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+const database = new sqlite3.Database("./database.db", (err) => {
+  if (err) {
+    console.error(err.message);
+  }
 });
-
-database
-  .getConnection()
-  .then(() => {
-    console.warn("Connection ok !");
-  })
-  .catch((err) => {
-    console.error(err);
-    console.warn("An error occured");
-  });
 
 module.exports = database;

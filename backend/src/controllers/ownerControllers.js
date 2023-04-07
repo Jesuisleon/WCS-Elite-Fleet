@@ -3,7 +3,7 @@ const modeles = require("../models");
 const getOwners = (req, res) => {
   modeles.owner
     .findAll()
-    .then(([result]) => {
+    .then((result) => {
       res.status(200).json(result);
     })
     .catch((err) => {

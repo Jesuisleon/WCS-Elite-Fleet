@@ -48,67 +48,69 @@ const verifyToken = (req, res, next) => {
 
 const verifyPassword = (req, res, next) => {
   const { email } = req.body;
-  database
-    .query("SELECT * FROM user WHERE EMAIL = ?", [email])
-    .then(([user]) => {
-      if (user[0] != null) {
-        const verifiedUser = user[0];
-        req.user = verifiedUser;
-        argon2
-          .verify(req.user.hashedPassword, req.body.password)
-          .then((isVerified) => {
-            if (isVerified) {
-              const payload = { sub: req.user.id };
-              const token = jwt.sign(payload, process.env.JWT_SECRET, {
-                expiresIn: "2h",
-              });
-              delete req.user.hashedPassword;
-              req.user.token = token;
-              next();
-            } else {
-              res.status(401).send("Wrong password");
-            }
-          })
-          .catch((error) => {
-            console.error(error);
-            res.sendStatus(401);
-          });
-      } else {
-        database
-          .query("SELECT * FROM owner WHERE EMAIL = ?", [email])
-          .then(([owner]) => {
-            if (owner[0] != null) {
-              const verifiedOwner = owner[0];
-              req.user = verifiedOwner;
-              argon2
-                .verify(req.user.hashedPassword, req.body.password)
-                .then((isVerified) => {
-                  if (isVerified) {
-                    const payload = { sub: req.user.id, isOwner: 1 };
-                    const token = jwt.sign(payload, process.env.JWT_SECRET, {
-                      expiresIn: "2h",
-                    });
-                    delete req.user.hashedPassword;
-                    req.user.token = token;
-                    next();
-                  } else {
-                    res.status(401).send("Wrong password");
-                  }
-                })
-                .catch((error) => {
-                  console.error(error);
-                  res.sendStatus(401);
-                });
-            } else {
-              throw new Error();
-            }
-          })
-          .catch((error) => {
-            console.error(error);
+  database.get("SELECT * FROM user WHERE email = ?", [email], (err, user) => {
+    if (err) {
+      console.error(err);
+      res.sendStatus(500);
+    } else if (user) {
+      const verifiedUser = user;
+      req.user = verifiedUser;
+      argon2
+        .verify(req.user.hashedPassword, req.body.password)
+        .then((isVerified) => {
+          if (isVerified) {
+            const payload = { sub: req.user.id };
+            const token = jwt.sign(payload, process.env.JWT_SECRET, {
+              expiresIn: "2h",
+            });
+            delete req.user.hashedPassword;
+            req.user.token = token;
+            next();
+          } else {
+            res.status(401).send("Wrong password");
+          }
+        })
+        .catch((error) => {
+          console.error(error);
+          res.sendStatus(401);
+        });
+    } else {
+      database.get(
+        "SELECT * FROM owner WHERE email = ?",
+        [email],
+        (e, owner) => {
+          if (e) {
+            console.error(e);
             res.sendStatus(500);
-          });
-      }
-    });
+          } else if (owner) {
+            const verifiedOwner = owner;
+            req.user = verifiedOwner;
+            argon2
+              .verify(req.user.hashedPassword, req.body.password)
+              .then((isVerified) => {
+                if (isVerified) {
+                  const payload = { sub: req.user.id, isOwner: 1 };
+                  const token = jwt.sign(payload, process.env.JWT_SECRET, {
+                    expiresIn: "2h",
+                  });
+                  delete req.user.hashedPassword;
+                  req.user.token = token;
+                  next();
+                } else {
+                  res.status(401).send("Wrong password");
+                }
+              })
+              .catch((error) => {
+                console.error(error);
+                res.sendStatus(401);
+              });
+          } else {
+            res.sendStatus(404);
+          }
+        }
+      );
+    }
+  });
 };
 
 const getloggedInIdFromToken = (req, res, next) => {
