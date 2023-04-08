@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "project template for the React-Express-MySQL cursus in Wild Code School",
   "scripts": {
-    "setup": "npm i && husky install && npm --prefix ./frontend i && pnpm --prefix ./backend i",
+    "setup": "pnpm i && husky install && npm run install-backend && npm run install-frontend",
     "migrate": "cd backend/ && node migrate.js && cd ..",
     "dev": "concurrently -n front,back -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm --prefix ./frontend run dev\" \"npm --prefix ./backend run dev\"",
     "dev-front": "npm --prefix ./frontend run dev",
     "dev-back": "npm --prefix ./backend run dev",
     "lint": "npm --prefix ./frontend run lint && npm --prefix ./backend run lint",
-    "fix": "npm --prefix ./frontend run fix && npm --prefix ./backend run fix"
+    "fix": "npm --prefix ./frontend run fix && npm --prefix ./backend run fix",
+    "install-backend": "pnpm install --prefix ./backend",
+    "install-frontend": "pnpm install --prefix ./frontend"
   },
   "keywords": [],
   "author": "Wild Code School",
@@ -19,11 +21,9 @@
     "husky": "^7.0.0"
   },
   "dependencies": {
-    "chart.js": "^4.1.2",
     "esbuild": "^0.16.16",
     "g": "^2.0.1",
-    "postcss-cli": "^10.1.0",
-    "react-chartjs-2": "^5.2.0",
-    "react-router-dom": "^6.6.2"
+    "postcss": ">=8.1.0 <9.0.0",
+    "postcss-cli": "^8.1.0"
   }
 }
