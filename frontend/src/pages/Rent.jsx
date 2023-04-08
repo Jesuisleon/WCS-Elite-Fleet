@@ -33,7 +33,9 @@ export default function Rent() {
   const [dataCar, setDataCar] = useState([]);
 
   const [filtersList, setFiltersList] = useState([]);
+  // console.log("🚀 ~ Rent ~ filtersList:", filtersList)
   const [filterCar, setFilterCar] = useState([]);
+  // console.log("🚀 ~ Rent ~ filterCar:", filterCar)
 
   const getUniqueValues = (data, field) => [
     ...new Set(data.map((e) => e[field])),
@@ -89,6 +91,8 @@ export default function Rent() {
 
   const handleModelFilter = (e) => {
     let updatedFilterCar = [...filterCar];
+    const updatedFiltersList = [...filtersList];
+
     if (
       e.target.checked === true &&
       !updatedFilterCar.includes(e.target.value)
@@ -99,6 +103,25 @@ export default function Rent() {
         (filter) => filter !== e.target.value
       );
     }
+
+    new Promise((resolve) => {
+      resolve(
+        updatedFiltersList.map((filter) => {
+          if (filter.id === e.target.name) {
+            filter.options = filter.options.map((option) => {
+              if (option.value === e.target.value) {
+                option.checked = e.target.checked;
+              }
+              return option;
+            });
+          }
+          return filter;
+        })
+      );
+    }).then((res) => {
+      setFiltersList(res);
+    });
+
     setFilterCar(updatedFilterCar);
   };
 
@@ -175,7 +198,7 @@ export default function Rent() {
                               >
                                 <input
                                   id={`filter-mobile-${section.id}-${optionIdx}`}
-                                  name={`${section.id}[]`}
+                                  name={`${section.id}`}
                                   defaultValue={option.value}
                                   type="checkbox"
                                   defaultChecked={option.checked}
@@ -304,7 +327,7 @@ export default function Rent() {
                             >
                               <input
                                 id={`filter-${section.id}-${optionIdx}`}
-                                name={`${section.id}[]`}
+                                name={`${section.id}`}
                                 defaultValue={option.value}
                                 type="checkbox"
                                 defaultChecked={option.checked}
