@@ -83,19 +83,39 @@ export default function Home() {
             </p>
             <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-16" src="/img/amazon.png" alt="Tuple" />
+                <img
+                  className="h-16"
+                  src="../../public/img/amazon.png"
+                  alt="Tuple"
+                />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-16" src="/img/tesla.png" alt="StaticKit" />
+                <img
+                  className="h-16"
+                  src="../../public//img/tesla.png"
+                  alt="StaticKit"
+                />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-                <img className="h-16" src="/img/appel.png" alt="Mirage" />
+                <img
+                  className="h-16"
+                  src="../../public//img/appel.png"
+                  alt="Mirage"
+                />
               </div>
               <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
-                <img className="h-16" src="/img/google.png" alt="Transistor" />
+                <img
+                  className="h-16"
+                  src="../../public//img/google.png"
+                  alt="Transistor"
+                />
               </div>
               <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
-                <img className="h-16" src="/img/sony.png" alt="Workcation" />
+                <img
+                  className="h-16"
+                  src="../../public//img/sony.png"
+                  alt="Workcation"
+                />
               </div>
             </div>
           </div>
