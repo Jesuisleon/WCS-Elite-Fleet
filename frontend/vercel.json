@@ -9,8 +9,12 @@
       "dest": "/$1.css"
     },
     {
-      "src": "/(.*).html",
-      "dest": "/index.html"
+      "src": "/(.*).(png|jpg|gif)",
+      "dest": "/public/img/$1.$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
     }
   ]
 }
