@@ -1,17 +1,17 @@
 /* eslint-disable import/no-unresolved */
 import "./setup.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Login from "./pages/Login";
-import Register from "./pages/Register";
-import Home from "./pages/Home";
-import Rent from "./pages/Rent";
-import CarDetail from "./pages/CarDetail";
-import ProfilPage from "./pages/ProfilPage";
-import OwnerCar from "./pages/OwnerCar";
-import ContactUs from "./pages/ContactUs";
-import Admin from "./pages/Admin";
+import Header from "@components/Header";
+import Footer from "@components/Footer";
+import Login from "@pages/Login";
+import Register from "@pages/Register";
+import Home from "@pages/Home";
+import Rent from "@pages/Rent";
+import CarDetail from "@pages/CarDetail";
+import ProfilPage from "@pages/ProfilPage";
+import OwnerCar from "@pages/OwnerCar";
+import ContactUs from "@pages/ContactUs";
+import Admin from "@pages/Admin";
 
 function App() {
   return (
