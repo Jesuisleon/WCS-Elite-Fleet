@@ -7,10 +7,6 @@
     {
       "src": "/(.*).css",
       "dest": "/$1.css"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "index.html"
     }
   ]
 }
