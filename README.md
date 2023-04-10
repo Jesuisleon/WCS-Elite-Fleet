@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/Jesuisleon/WCS-Elite-Fleet">
-    <img src="/frontend/public/image/logo.png" alt="Logo" width="80" height="80">
+    <img src="/frontend/public/image/logo.png" alt="Logo" width="100" height="80">
   </a>
 
   <h3 align="center">HACKATON WCS Elite Fleet</h3>
