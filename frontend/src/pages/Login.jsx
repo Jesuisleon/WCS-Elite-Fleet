@@ -213,6 +213,24 @@ export default function Login() {
                     )}
                     Connexion
                   </button>
+                  <div className="mt-6">
+                    <Link
+                      to="/register"
+                      className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-indigo-600 bg-indigo-100 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                    >
+                      Créer un compte
+                    </Link>
+                  </div>
+
+                  <div className="mt-6 w-full flex flex-col text-indigo-600 font-normal">
+                    <p>
+                      Admin email:{" "}
+                      <span className="font-bold">root@root.com</span>
+                    </p>
+                    <p>
+                      Admin password: <span className="font-bold">ben</span>
+                    </p>
+                  </div>
                 </div>
               </form>
               {message && (
